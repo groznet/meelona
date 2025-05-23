@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenleaf-Grozny | Красота, здоровье и партнерство</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <!-- Let's use TailwindCSS CND -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Add font FuturaPT and Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=FuturaPT:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Make roboto default font -->
+    <style>
+        body {
+            /* font-family: 'Roboto', sans-serif; */
+        }
+
+        /* Carousel */        
+    </style>
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-lime-50 to-lime-100 shadow-sm relative">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/"><img src="images/logo.png" alt="Greenleaf-Grozny" class="w-40 md:w-60"></a>
+            </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button id="menu-toggle" class="md:hidden text-green-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Menu -->
+            <nav id="menu" class="hidden md:flex items-center gap-4 uppercase green-text">
+                <a href="#about" class="text-green-500 font-bold px-2">О компании</a>
+                <a href="#benefits" class="text-green-500 font-bold px-2">Преимущества</a>
+                <a href="#products" class="text-green-500 font-bold px-2">Продукты</a>
+                <a href="#marketing" class="text-green-500 font-bold px-2">Маркетинг</a>
+                <a href="#contact" class="text-green-500 font-bold px-2">Контакты</a>
+                <a href="#shop" class="text-green-500 font-bold px-2">Интернет-магазин</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <button class="bg-green-500 text-white px-4 py-2 rounded-full font-bold">Оставить заявку</button>
+            </div>
+        </div>
+        <!-- Mobile Menu (Dropdown) -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+            <nav class="flex flex-col gap-2 text-green-800 uppercase">
+                <a href="#about">О компании</a>
+                <a href="#benefits">Преимущества</a>
+                <a href="#products">Продукты</a>
+                <a href="#marketing">Маркетинг</a>
+                <a href="#contact">Контакты</a>
+                <a href="#shop">Интернет-магазин</a>
+                <button class="bg-green-500 text-white px-4 py-2 mt-2 rounded-full font-bold w-full">Оставить заявку</button>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero Section -->
+    <!-- use image from images/hero-1.jpg for section background -->
+    <section class="bg-cover bg-top bg-no-repeat lg:pt-10" style="background-image: url('images/hero-1.jpg');">
+        <div class="container mx-auto px-1">
+            <!-- 2 columns grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center px-4 py-8 gap-8">
+                <!-- Left Column -->
+                <div class="lg:pl-50">
+                  <h1 class="text-2xl md:text-4xl font-bold text-white">
+                    <span class="text-green-500">GREENLEAF</span> – СЕТЕВАЯ<br> КОМПАНИЯ БУДУЩЕГО,<br> ГОТОВЫЙ БИЗНЕС<br> ДЛЯ КАЖДОГО!
+                  </h1>
+              
+                  <!-- Benefits List -->
+                  <ul class="list-disc list-inside text-white mt-5 space-y-2 text-base md:text-lg marker:text-green-400">
+                    <li><span class="font-bold">ВЫГОДНЫЙ СЕТЕВОЙ МАРКЕТИНГ + ОБУЧЕНИЕ</span></li>
+                    <li><span class="font-bold">ЭКОЛОГИЧЕСКИЕ ТОВАРЫ ОТ ПРОИЗВОДИТЕЛЯ</span></li>
+                    <li><span class="font-bold">ПО ЛУЧШИМ ЦЕНАМ</span></li>
+                    <li><span class="font-bold">ФРАНШИЗА, ОТКРОЙТЕ МАГАЗИН</span></li>
+                    <li><span class="font-bold">ШИРОКИЙ АССОРТИМЕНТ И СЕРТИФИКАТЫ</span></li>
+                  </ul>
+                  <button class="bg-green-700 text-white px-8 py-4 mt-10 text-center text-xl rounded-full font-bold border-2 border-white animate-bounce uppercase">Хочу в команду</button>
+                </div>
+              
+                <!-- Right Column -->
+                <div class="p-0 md:p-10 lg:pr-50">
+                  <div class="relative">
+                    <video src="assets/main-video.mp4" autoplay muted loop playsinline class="w-full rounded-4xl border-16 border-green-500 shadow-2xl"></video>
+                  </div>
+                  <h2 class="text-xl md:text-2xl text-center font-bold mt-4 text-dark">СТАНЬ ЧАСТЬЮ КОМАНДЫ И ПОЛУЧАЙ ГАРАНТИРОВАННЫЙ ДОХОД</h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 items-center lg:px-100 px-4 py-8 gap-8">
+                <!-- Youtube video in center smaller -->
+                <!-- Move video to center -->
+                <div class="flex justify-center">
+                    <iframe width="1280" height="320" src="https://www.youtube.com/embed/v4QhjHfdaZQ?si=hYY6RxSswdMlhoLt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h1 class="text-2xl md:text-xl font-bold text-center">Корпорация с 20 летним стажем работы в Китае занимает высокую 70 позицию в ТОП-100 лучших МЛМ компаний всего за год работы</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 items-center px-4 py-8 gap-8">
+                <div class="flex flex-row items-center bg-green-500/75 rounded-4xl p-4">
+                    <!-- left image, right text -->
+                    <img src="images/1.png" alt="image-1" class="w-1/2 rounded-4xl shadow-2xl bg-gradient-to-r from-lime-200 to-lime-400 rounded-full">
+                    <h1 class="font-bold">Корпорация с 20 летним стажем работы в Китае занимает высокую 70 позицию в ТОП-100 лучших МЛМ компаний всего за год работы</h1>
+                </div>
+                <div class="flex flex-row items-center bg-green-500/75 rounded-4xl p-4">
+                    <!-- left image, right text -->
+                    <img src="images/2.png" alt="image-1" class="w-1/2 rounded-4xl shadow-2xl bg-gradient-to-r from-lime-200 to-lime-400 rounded-full">
+                    <h1 class="font-bold">Корпорация с 20 летним стажем работы в Китае занимает высокую 70 позицию в ТОП-100 лучших МЛМ компаний всего за год работы</h1>
+                </div>
+                <div class="flex flex-row items-center bg-green-500/75 rounded-4xl p-4">
+                    <!-- left image, right text -->
+                    <img src="images/3.png" alt="image-1" class="w-1/2 rounded-4xl shadow-2xl bg-gradient-to-r from-lime-200 to-lime-400 rounded-full">
+                    <h1 class="font-bold">Корпорация с 20 летним стажем работы в Китае занимает высокую 70 позицию в ТОП-100 лучших МЛМ компаний всего за год работы</h1>
+                </div>
+                 
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Benefits Section -->
+    <section id="benefits" class="bg-gradient-to-r from-lime-50 to-lime-100 md:pt-25 md:pb-50" style="background-image: url('images/benefits-bg.jpg'); background-size: cover; background-position: top; background-repeat: no-repeat;">
+        <div class="container mx-auto px-4 md:px-25 lg:px-50 py-12">
+            <h1 class="text-2xl md:text-4xl font-bold text-center mb-10">Преимущества</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 relative gap-10">
+        
+                <!-- Left Column -->
+                <ul class="space-y-6 text-base md:text-lg font-medium">
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Нет ЛТО (Нет обязательных закупок)</li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Никаких продаж по каталогам</li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Не требуется подтверждение квалификации</li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Понятие календарный месяц отсутствует</li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Товарооборот не сгорает, накопительная система позволяет вам не начинать каждый месяц с нуля</li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Товарооборот сохраняется, накапливается и дает право постепенного выхода на лидерские ранги</li>
+                </ul>
+    
+                <!-- Right Column -->
+                <ul class="space-y-6 text-base md:text-lg font-medium">
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Возможности нетворкинга — полезные связи</li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Качественные экопродукты и биоразлагаемая упаковка</li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Работа в свободное время и любой точки мира</li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Наценка в продаже может достигать <span class="font-bold text-green-600">200–300%</span></li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Низкая стоимость франшизы. Собственный бизнес можно начать всего с <span class="font-bold">7 000 руб</span></li>
+                <li class="flex items-start gap-3"><span class="w-4 h-4 mt-1 bg-green-500 border-4 border-yellow-300 rounded-full shrink-0"></span>Вложения окупаются стартовым набором, возвратным бонусом и скидкой на покупку продукции</li>
+                </ul>
+        
+                <!-- Vertical Line in Center -->
+                <div class="hidden md:block absolute left-1/2 top-0 h-full w-1 border-l-4 border-green-500 -translate-x-1/2 z-0"></div>
+            </div>
+        </div>
+    </section>  
+    <!-- End Benefits Section -->
+    <!-- About Section -->
+    <!-- Company Video Section -->
+    <section id="about" class="relative bg-cover bg-center bg-no-repeat md:py-25" style="background-image: url('images/about-bg.jpg');">
+        <div class="container mx-auto py-16 px-4 flex flex-col md:flex-row gap-12 justify-between items-start relative z-10 md:px-25 lg:px-50">
+    
+            <!-- Card 1 -->
+            <div class="relative w-[300px] mt-16">
+                <!-- Label -->
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-t-lg font-semibold shadow-md">О КОМПАНИИ
+                </div>
+                <!-- Video -->
+                <div class="overflow-hidden rounded-lg shadow-lg border-10 border-green-600">
+                    <iframe class="w-full" src="https://www.youtube.com/embed/kDNZ1sMmwzA?si" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <!-- Info Icon -->
+                <div class="relative flex justify-center mt-3">
+                    <div class="group relative cursor-pointer">
+                        <div class="w-8 h-8 flex items-center justify-center bg-green-600 text-white rounded-full text-lg font-bold">i</div>
+                        <div class="absolute bottom-full mb-2 w-60 text-sm bg-white text-black p-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                            Компания GREENLEAF основана в 1998 году в Китае.
+                            Расположена в 100 км от Шанхая, в индустриальном парке Шу Гуан, национальной высокотехнологичной зоне Сучжоу. Уставной капитал компании 22 миллиона долларов. Производственные площади занимают более 100 га. Объем общих инвестиций в научно-технический промышленный парк составил 68 миллионов долларов. Это современная высокотехнологичная группа, объединяющая научные исследования, производство, международное сотрудничество, продвижение бренда и маркетинг. Официальное открытие компании в России состоялось
+                            29 июня 2019 г. в Москве.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="relative w-[300px] mt-0">
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-t-lg font-semibold shadow-md">ЛАБОРАТОРИЯ
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg border-10 border-green-600">
+                    <iframe class="w-full" src="https://www.youtube.com/embed/rRVvb4eirvA?si" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="relative flex justify-center mt-3">
+                    <div class="group relative cursor-pointer">
+                        <div class="w-8 h-8 flex items-center justify-center bg-green-600 text-white rounded-full text-lg font-bold">i</div>
+                        <div class="absolute bottom-full mb-2 w-60 text-sm bg-white text-black p-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                            Производственная линия использует современное производственное оборудование из Германии, Франции
+                            и Италии, а также международную ведущую систему контроля качества, основываясь на независимых исследованиях и разработках химических продуктов за последние 20 лет. Научно-техническая группа GREENLEAF постоянно наращивала темпы своего роста и постепенно превращалась в научного первопроходца китайской повседневной химической промышленности. Greenleaf успешно сотрудничает с международным итальянским косметическим гигантом INTERCOS Group и швейцарским CRB - Швейцарским национальным исследовательским центром по уходу за кожей.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="relative w-[300px] mt-24">
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-t-lg font-semibold shadow-md">ПРОИЗВОДСТВО
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg border-10 border-green-600">
+                    <iframe class="w-full" src="https://www.youtube.com/embed/uzrTM4KhLtU?si" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="relative flex justify-center mt-3">
+                    <div class="group relative cursor-pointer">
+                        <div class="w-8 h-8 flex items-center justify-center bg-green-600 text-white rounded-full text-lg font-bold">i</div>
+                        <div class="absolute bottom-full mb-2 w-60 text-sm bg-white text-black p-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                            Здание 5-этажного производственного центра длиной 206 метров с общей площадью застройки 40 тысяч квадратных метров. Оно включает в себя лаборатории, созданные по мировым стандартам, по производству косметических средств и товаров повседневного использования. Лаборатории содержат 5 автоматических линий по производству косметических средств и 4 линии по производству моющих средств. Стандарт всех лабораторий достиг разряда в 100 тысяч, из которых лаборатория по наполнению достигла 10000 класса, и она не имеет себе равных.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+    <!-- Why Us Section -->
+    <section id="products" class="relative bg-cover bg-center bg-no-repeat text-white" style="background-image: url('images/why-us-bg.jpg'); background-size: cover; background-position: top; background-repeat: no-repeat;">
+        <div class="container mx-auto px-4 py-24 text-center flex flex-col items-center justify-center">
+            <!-- Logo -->
+            <img src="images/ECO2.png" alt="ECO Greenleaf" class="mb-6 mx-auto" />
+
+            <!-- Description -->
+            <p class="max-w-xl mx-auto text-lg md:text-xl">
+                Широкий ассортимент качественной продукции повседневного спроса от производителя по выгодным для вас ценам со скидкой от 50% и кешбеком до 50%
+            </p>
+
+            <!-- Buttons -->
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-green-700 text-white px-8 py-4 mt-10 text-center rounded-full font-bold border-2 border-white animate-bounce uppercase">ПОСМОТРЕТЬ ПРОДУКЦИЮ<br>GREENLEAF НА САЙТЕ</button>
+                <button class="bg-green-700 text-white px-8 py-4 mt-10 text-center text-xl rounded-full font-bold border-2 border-white animate-bounce uppercase">ПОСМОТРЕТЬ КАТАЛОГ</button>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Marketing Section -->
+    <section id="marketing" class="relative min-h-[600px] md:py-50 flex items-center justify-center overflow-hidden" style="background-image: url('images/marketing-bg.jpg'); background-size: cover; background-position: top; background-repeat: no-repeat;">
+    
+        <!-- Content Container -->
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <!-- Main Heading -->
+                <h2 class="text-4xl md:text-4xl font-bold mb-6 drop-shadow-lg">
+                    ЛУЧШИЙ СЕТЕВОЙ МАРКЕТИНГ!
+                </h2>
+                
+                <!-- Subheading -->
+                <p class="text-xl md:text-2xl mb-8 font-medium">
+                    РАЗБЕРИСЬ С МАРКЕТИНГОМ СЕГОДНЯ<br>
+                    ЧТО БЫ СТАТЬ ЛИДЕРОМ ЗАВТРА!
+                </p>
+    
+                <!-- Separator Line -->
+                <div class="w-24 h-1 bg-white mx-auto mb-10"></div>
+    
+                <!-- CTA Button -->
+                <a href="#download" 
+                   class="inline-block bg-green-600 hover:bg-green-700 
+                          text-lg md:text-xl py-4 px-12 rounded-full 
+                          transition-all duration-300 transform hover:scale-105
+                          shadow-lg hover:shadow-xl mb-8 animate-bounce text-white">
+                    СКАЧАТЬ МАРКЕТИНГ
+                </a>
+    
+                <!-- Bottom Text -->
+                <p class="text-sm md:text-base opacity-90 italic">
+                    Остоимся вопросы излишне нам
+                </p>
+            </div>
+            <style>
+                /* Add this if you need better mobile support */
+                @media (max-width: 768px) {
+                    section {
+                        background-attachment: scroll !important;
+                    }
+                }
+            </style>            
+        </div>
+    </section>
+    <!-- End Marketing Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center pb-15">
+                <h1 class="text-xl font-bold">Напишите, мы ответим на все Ваши вопросы!</h1>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Left Column -->
+                <div class="w-full">
+                    <img src="images/animated-map.gif" alt="contact-left">
+                </div>
+    
+                <!-- Right Column - Form -->
+                <div class="w-full">
+                    <form class="bg-white p-8 rounded-xl shadow-lg">
+                        <!-- Phone/Email -->
+                        <div class="grid gap-6 mb-8">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Всех телефон</label>
+                                <input type="tel" 
+                                       class="w-full px-4 py-3 bg-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                                       required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Всех e-mail</label>
+                                <input type="email" 
+                                       class="w-full px-4 py-3 bg-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                                       required>
+                            </div>
+                        </div>
+        
+                        <!-- Partnership Question -->
+                        <div class="mb-8">
+                            <p class="text-gray-700 mb-4">Вы официальный партнер комиссии Greenleaf?</p>
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3">
+                                    <input type="radio" name="partnership" 
+                                           class="form-radio text-green-500 h-5 w-5">
+                                    <span>Да, в партнер компании Greenleaf</span>
+                                </label>
+                                <label class="flex items-center space-x-3">
+                                    <input type="radio" name="partnership" 
+                                           class="form-radio text-green-500 h-5 w-5">
+                                    <span>Нет, но могу узнать вас нет сети</span>
+                                </label>
+                            </div>
+                        </div>
+        
+                        <!-- Submit Button -->
+                        <button type="submit" 
+                                class="w-full bg-green-600 hover:bg-green-700 text-white py-4 px-8 rounded-lg
+                                       transition-all duration-300 font-medium text-lg">
+                            ОТПРАВИТЬ
+                        </button>
+        
+                        <!-- Footer Text -->
+                        <p class="mt-6 text-sm text-gray-500 text-center">
+                            Наконец на оплату и соглашение к политике информационности
+                        </p>
+                    </form>                  
+                    <!-- Google Forms -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCHqEbSGPqAwYbkLHmImB-loCRyWqT7s6Y7ELqCyi2ayquug/viewform?embedded=true" width="640" height="855" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+    <!-- Footer Section -->
+    <footer class="bg-green-500 text-white">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col items-center justify-center space-y-2 text-center">
+                <!-- Copyright -->
+                <div class="text-sm md:text-base">
+                    © GREENLEAF
+                </div>
+                
+                <!-- Ecology Contact -->
+                <div class="text-sm md:text-base">
+                    Экология: 
+                    <a href="mailto:greenleaf@dysmiden.ru" 
+                       class="transition-colors">
+                        greenleaf@dysmiden.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Add your form submission logic here
+        alert('Форма успешно отправлена!');
+    });
+    </script>    
+
+    <!-- End Why Us Section -->
+    <!-- Import Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- JS to toggle mobile menu -->
+      <script>
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+          document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+      </script>      
+
+</body>
+</html>
